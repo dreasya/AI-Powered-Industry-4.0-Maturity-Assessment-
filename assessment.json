@@ -1,0 +1,858 @@
+{
+  "assessment_metadata": {
+    "title": "Industry 4.0 Maturity Assessment",
+    "version": "1.0",
+    "total_dimensions": 7,
+    "total_questions": 105,
+    "last_updated": "2025-02-13"
+  },
+  "dimensions": {
+    "smart_factory": {
+      "dimension_id": "1",
+      "name": "Smart Factory",
+      "subdimensions": {
+        "equipment_infrastructure": {
+          "name": "Equipment Infrastructure",
+          "questions": [
+            {
+              "id": "1.1.1",
+              "question": "What percentage of your manufacturing equipment is capable of machine-to-machine (M2M) communication?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "1.1.2",
+              "question": "How many sensors are currently installed across your production equipment?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "1.1.3",
+              "question": "What percentage of your production systems generate real-time data?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "data_collection_usage": {
+          "name": "Data Collection & Usage",
+          "questions": [
+            {
+              "id": "1.2.1",
+              "question": "What percentage of your production data is collected and stored automatically?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "1.2.2",
+              "question": "How many distinct data points are analyzed in real-time for process optimization?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "1.2.3",
+              "question": "What percentage of quality control decisions are made using automated data analysis?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "system_integration": {
+          "name": "System Integration",
+          "questions": [
+            {
+              "id": "1.3.1",
+              "question": "How many production planning systems are directly integrated with shop floor operations?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "1.3.2",
+              "question": "What percentage of data exchange between MES and ERP systems is automated?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "1.3.3",
+              "question": "In minutes, what is the average lag time between shop floor events and management system updates?",
+              "response_type": "number",
+              "unit": "minutes"
+            }
+          ]
+        },
+        "digital_twin_simulation": {
+          "name": "Digital Twin & Simulation",
+          "questions": [
+            {
+              "id": "1.4.1",
+              "question": "How many production processes have active digital twin implementations?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "1.4.2",
+              "question": "What percentage of new process designs are validated through simulation before implementation?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "1.4.3",
+              "question": "How many virtual commissioning projects were completed in the last 12 months?",
+              "response_type": "number",
+              "unit": "count"
+            }
+          ]
+        },
+        "cybersecurity": {
+          "name": "Cybersecurity",
+          "questions": [
+            {
+              "id": "1.5.1",
+              "question": "What percentage of your IoT devices are covered by automated security monitoring?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "1.5.2",
+              "question": "How frequently are security audits conducted?",
+              "response_type": "number",
+              "unit": "days"
+            },
+            {
+              "id": "1.5.3",
+              "question": "What is your mean time to detect (MTTD) security incidents?",
+              "response_type": "number",
+              "unit": "hours"
+            }
+          ]
+        }
+      }
+    },
+    "smart_operations": {
+      "dimension_id": "2",
+      "name": "Smart Operations",
+      "subdimensions": {
+        "vertical_horizontal_integration": {
+          "name": "Vertical & Horizontal Integration",
+          "questions": [
+            {
+              "id": "2.1.1",
+              "question": "What percentage of production orders are automatically transferred from ERP to shop floor systems?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "2.1.2",
+              "question": "How many supplier systems are directly integrated with your production planning?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "2.1.3",
+              "question": "What percentage of quality data is shared automatically with suppliers within 24 hours?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "supply_chain_visibility": {
+          "name": "Supply Chain Visibility",
+          "questions": [
+            {
+              "id": "2.2.1",
+              "question": "What percentage of key components are tracked in real-time?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "2.2.2",
+              "question": "How many suppliers provide real-time inventory data through automated interfaces?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "2.2.3",
+              "question": "What is your average response time to supply chain disruptions?",
+              "response_type": "number",
+              "unit": "hours"
+            }
+          ]
+        },
+        "autonomous_processes": {
+          "name": "Autonomous Processes",
+          "questions": [
+            {
+              "id": "2.3.1",
+              "question": "What percentage of material handling between workstations is automated?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "2.3.2",
+              "question": "How many production decision points are fully automated?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "2.3.3",
+              "question": "What percentage of quality inspections are performed by automated systems?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "predictive_analytics": {
+          "name": "Predictive Analytics",
+          "questions": [
+            {
+              "id": "2.4.1",
+              "question": "How many critical machines have predictive maintenance systems?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "2.4.2",
+              "question": "What percentage of machine breakdowns were predicted successfully in the last 6 months?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "2.4.3",
+              "question": "How many production parameters are monitored for predictive quality control?",
+              "response_type": "number",
+              "unit": "count"
+            }
+          ]
+        },
+        "real_time_process_optimization": {
+          "name": "Real-time Process Optimization",
+          "questions": [
+            {
+              "id": "2.5.1",
+              "question": "What percentage of production schedule adjustments are automated?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "2.5.2",
+              "question": "What is your average time to implement automatic corrections after detecting process deviations?",
+              "response_type": "number",
+              "unit": "minutes"
+            },
+            {
+              "id": "2.5.3",
+              "question": "How many process parameters are optimized through machine learning?",
+              "response_type": "number",
+              "unit": "count"
+            }
+          ]
+        }
+      }
+    },
+    "smart_products": {
+      "dimension_id": "3",
+      "name": "Smart Products",
+      "subdimensions": {
+        "product_digitalization": {
+          "name": "Product Digitalization",
+          "questions": [
+            {
+              "id": "3.1.1",
+              "question": "What percentage of your products contain embedded sensors?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "3.1.2",
+              "question": "How many digital features does your average product have?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "3.1.3",
+              "question": "What percentage of your products can collect usage data?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "product_integration": {
+          "name": "Product Integration",
+          "questions": [
+            {
+              "id": "3.2.1",
+              "question": "How many of your products can communicate with other devices?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "3.2.2",
+              "question": "What percentage of your products are integrated with your cloud platform?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "3.2.3",
+              "question": "How many standardized interfaces does each smart product have on average?",
+              "response_type": "number",
+              "unit": "count"
+            }
+          ]
+        },
+        "data_analytics": {
+          "name": "Data Analytics",
+          "questions": [
+            {
+              "id": "3.3.1",
+              "question": "What percentage of product usage data is analyzed in real-time?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "3.3.2",
+              "question": "How many distinct usage parameters are tracked per product?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "3.3.3",
+              "question": "What is your average time to insight from collected product data?",
+              "response_type": "number",
+              "unit": "hours"
+            }
+          ]
+        },
+        "product_customization": {
+          "name": "Product Customization",
+          "questions": [
+            {
+              "id": "3.4.1",
+              "question": "What percentage of product features can be customized through software?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "3.4.2",
+              "question": "How many product variants can be configured digitally?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "3.4.3",
+              "question": "What percentage of product updates are delivered remotely?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "product_security": {
+          "name": "Product Security",
+          "questions": [
+            {
+              "id": "3.5.1",
+              "question": "How frequently are product security features updated?",
+              "response_type": "number",
+              "unit": "days"
+            },
+            {
+              "id": "3.5.2",
+              "question": "What percentage of products have automated threat detection?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "3.5.3",
+              "question": "How many security vulnerabilities were detected and patched in the last 12 months?",
+              "response_type": "number",
+              "unit": "count"
+            }
+          ]
+        }
+      }
+    },
+    "data_driven_services": {
+      "dimension_id": "4",
+      "name": "Data-driven Services",
+      "subdimensions": {
+        "service_portfolio": {
+          "name": "Service Portfolio",
+          "questions": [
+            {
+              "id": "4.1.1",
+              "question": "How many digital services do you currently offer?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "4.1.2",
+              "question": "What percentage of your revenue comes from digital services?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "4.1.3",
+              "question": "How many new digital services were introduced in the last 12 months?",
+              "response_type": "number",
+              "unit": "count"
+            }
+          ]
+        },
+        "data_collection_analysis": {
+          "name": "Data Collection & Analysis",
+          "questions": [
+            {
+              "id": "4.2.1",
+              "question": "What percentage of service interactions are automatically logged?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "4.2.2",
+              "question": "How many service parameters are monitored in real-time?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "4.2.3",
+              "question": "What is your average time to generate service insights from collected data?",
+              "response_type": "number",
+              "unit": "hours"
+            }
+          ]
+        },
+        "predictive_services": {
+          "name": "Predictive Services",
+          "questions": [
+            {
+              "id": "4.3.1",
+              "question": "What percentage of service issues are predicted before customer impact?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            },
+            {
+              "id": "4.3.2",
+              "question": "How many predictive service models are currently active?",
+              "response_type": "number",
+              "unit": "count"
+            },
+            {
+              "id": "4.3.3",
+              "question": "What is your average prediction accuracy for service issues?",
+              "response_type": "percentage",
+              "range": [0, 100]
+            }
+          ]
+        },
+        "service_integration": {
+          "name": "Service Integration",
+          "questions": [
+              {
+                "id": "4.4.1",
+                "question": "How many service platforms are integrated with customer systems?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "4.4.2",
+                "question": "What percentage of service requests are handled automatically?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "4.4.3",
+                "question": "How many different data sources feed into your service analytics?",
+                "response_type": "number",
+                "unit": "count"
+              }
+            ]
+          },
+          "service_innovation": {
+            "name": "Service Innovation",
+            "questions": [
+              {
+                "id": "4.5.1",
+                "question": "What percentage of services utilize AI/ML capabilities?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "4.5.2",
+                "question": "How many service prototypes are currently being tested?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "4.5.3",
+                "question": "What is your average time to market for new digital services?",
+                "response_type": "number",
+                "unit": "months"
+              }
+            ]
+          }
+        }
+      },
+      "employees": {
+        "dimension_id": "5",
+        "name": "Employees",
+        "subdimensions": {
+          "digital_skills": {
+            "name": "Digital Skills",
+            "questions": [
+              {
+                "id": "5.1.1",
+                "question": "What percentage of employees have completed advanced digital training?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "5.1.2",
+                "question": "How many digital certification programs are available to employees?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "5.1.3",
+                "question": "What percentage of job roles require digital competencies?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              }
+            ]
+          },
+          "training_development": {
+            "name": "Training & Development",
+            "questions": [
+              {
+                "id": "5.2.1",
+                "question": "How many hours of digital training per employee were delivered last year?",
+                "response_type": "number",
+                "unit": "hours"
+              },
+              {
+                "id": "5.2.2",
+                "question": "What percentage of training content is available digitally?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "5.2.3",
+                "question": "How many employees participated in Industry 4.0 specific training?",
+                "response_type": "number",
+                "unit": "count"
+              }
+            ]
+          },
+          "digital_workplace": {
+            "name": "Digital Workplace",
+            "questions": [
+              {
+                "id": "5.3.1",
+                "question": "What percentage of work processes are digitally supported?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "5.3.2",
+                "question": "How many digital collaboration tools are actively used?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "5.3.3",
+                "question": "What percentage of employees have access to real-time data dashboards?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              }
+            ]
+          },
+          "innovation_culture": {
+            "name": "Innovation Culture",
+            "questions": [
+              {
+                "id": "5.4.1",
+                "question": "How many employee-driven digital innovation projects were implemented last year?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "5.4.2",
+                "question": "What percentage of employees participate in digital innovation initiatives?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "5.4.3",
+                "question": "How many digital suggestion systems are in place?",
+                "response_type": "number",
+                "unit": "count"
+              }
+            ]
+          },
+          "change_management": {
+            "name": "Change Management",
+            "questions": [
+              {
+                "id": "5.5.1",
+                "question": "What percentage of employees actively support digital transformation?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "5.5.2",
+                "question": "How many change agents are formally trained for digital initiatives?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "5.5.3",
+                "question": "What is your employee digital adoption rate for new technologies?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              }
+            ]
+          }
+        }
+      },
+      "strategy_organization": {
+        "dimension_id": "6",
+        "name": "Strategy and Organization",
+        "subdimensions": {
+          "digital_strategy": {
+            "name": "Digital Strategy",
+            "questions": [
+              {
+                "id": "6.1.1",
+                "question": "What percentage of strategic objectives are tied to digital transformation?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "6.1.2",
+                "question": "How many digital transformation KPIs are actively tracked?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "6.1.3",
+                "question": "What percentage of your budget is allocated to digital initiatives?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              }
+            ]
+          },
+          "organization_structure": {
+            "name": "Organization Structure",
+            "questions": [
+              {
+                "id": "6.2.1",
+                "question": "How many dedicated digital transformation roles exist?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "6.2.2",
+                "question": "What percentage of departments have digital champions?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "6.2.3",
+                "question": "How many cross-functional digital teams are operational?",
+                "response_type": "number",
+                "unit": "count"
+              }
+            ]
+          },
+          "innovation_management": {
+            "name": "Innovation Management",
+            "questions": [
+              {
+                "id": "6.3.1",
+                "question": "What percentage of innovation projects are digitally focused?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "6.3.2",
+                "question": "How many digital innovation partnerships are active?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "6.3.3",
+                "question": "What is your average time to implement digital innovations?",
+                "response_type": "number",
+                "unit": "months"
+              }
+            ]
+          },
+          "digital_governance": {
+            "name": "Digital Governance",
+            "questions": [
+              {
+                "id": "6.4.1",
+                "question": "How many digital policies and standards are implemented?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "6.4.2",
+                "question": "What percentage of processes have digital governance controls?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "6.4.3",
+                "question": "How frequently are digital governance reviews conducted?",
+                "response_type": "number",
+                "unit": "months"
+              }
+            ]
+          },
+          "investment_resources": {
+            "name": "Investment & Resources",
+            "questions": [
+              {
+                "id": "6.5.1",
+                "question": "What percentage of revenue is invested in digital technologies?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "6.5.2",
+                "question": "How many digital transformation projects are currently funded?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "6.5.3",
+                "question": "What is your ROI measurement frequency for digital investments?",
+                "response_type": "number",
+                "unit": "months"
+              }
+            ]
+          }
+        }
+      },
+      "csr": {
+        "dimension_id": "7",
+        "name": "Corporate Social Responsibility",
+        "subdimensions": {
+          "environmental_impact": {
+            "name": "Environmental Impact",
+            "questions": [
+              {
+                "id": "7.1.1",
+                "question": "What percentage of your digital initiatives reduce environmental impact?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "7.1.2",
+                "question": "How many environmental parameters are digitally monitored?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "7.1.3",
+                "question": "What percentage reduction in carbon footprint achieved through digital solutions?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              }
+            ]
+          },
+          "social_impact": {
+            "name": "Social Impact",
+            "questions": [
+              {
+                "id": "7.2.1",
+                "question": "How many digital initiatives support community development?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "7.2.2",
+                "question": "What percentage of digital projects consider social impact?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "7.2.3",
+                "question": "How many stakeholder groups are digitally engaged?",
+                "response_type": "number",
+                "unit": "count"
+              }
+            ]
+          },
+          "sustainable_operations": {
+            "name": "Sustainable Operations",
+            "questions": [
+              {
+                "id": "7.3.1",
+                "question": "What percentage of operations are optimized for sustainability through digital means?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "7.3.2",
+                "question": "How many sustainability metrics are tracked digitally?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "7.3.3",
+                "question": "What is your average response time to sustainability-related incidents?",
+                "response_type": "number",
+                "unit": "hours"
+              }
+            ]
+          },
+          "ethical_technology": {
+            "name": "Ethical Technology",
+            "questions": [
+              {
+                "id": "7.4.1",
+                "question": "What percentage of AI/ML systems are evaluated for ethical compliance?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "7.4.2",
+                "question": "How many ethical technology guidelines are implemented?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "7.4.3",
+                "question": "How frequently are ethical technology audits conducted?",
+                "response_type": "number",
+                "unit": "months"
+              }
+            ]
+          },
+          "responsible_innovation": {
+            "name": "Responsible Innovation",
+            "questions": [
+              {
+                "id": "7.5.1",
+                "question": "What percentage of innovation projects address sustainability challenges?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              },
+              {
+                "id": "7.5.2",
+                "question": "How many responsible innovation frameworks are in place?",
+                "response_type": "number",
+                "unit": "count"
+              },
+              {
+                "id": "7.5.3",
+                "question": "What percentage of digital projects undergo sustainability impact assessment?",
+                "response_type": "percentage",
+                "range": [0, 100]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
