@@ -14,7 +14,7 @@ load_dotenv()
 class Industry40AssessmentAgent:
     def __init__(self, pdf_path):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        self.conn = sqlite3.connect('industry40_assessment_test.db')
+        self.conn = sqlite3.connect('industry40_assessment.db')
         self.cursor = self.conn.cursor()
         self.embeddings = OpenAIEmbeddings()
         self.vector_store = None
@@ -42,7 +42,7 @@ class Industry40AssessmentAgent:
         self.vector_store = Chroma.from_texts(
             chunks, 
             self.embeddings,
-            persist_directory="./impuls"
+            persist_directory="./impuls_documentation"
         )
         print("IMPULS knowledge base loaded successfully!")
 
@@ -386,5 +386,5 @@ def run_assessment(pdf_path):
     print("\nAssessment completed!")
 
 if __name__ == "__main__":
-    pdf_path = "impulss.pdf"  # Path to your IMPULS PDF
+    pdf_path = "impuls_documentation.pdf"  # Path to your IMPULS PDF
     run_assessment(pdf_path)
